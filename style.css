@@ -1,0 +1,278 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color:#2f3349;
+}
+.one{
+    padding:1rem;
+    background-color:#282e44;
+    height:30rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:5rem 2rem;
+}
+ .logo{
+    width: 20rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+ .logo img{
+    width:3rem;
+    margin-right:0.4rem;
+}
+ .logo h4{
+    color:white;
+    font-size: 1.5rem;
+}
+.two{
+    margin:5rem 2rem;
+    padding:1rem;
+    /* height:60rem; */
+    display:grid;
+    grid-template-columns: 30% auto;
+}
+.two .left{
+    background-color:#282e44;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:4rem 0;
+    align-items: center;
+    height:100%;
+}
+/* two right */
+.two .right{
+    background-color:#02549e;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    position: relative;
+    /* justify-content: center; */
+    
+}
+.two .right .status_image{
+    width:15rem;
+}
+ .button1{
+    padding:1rem 2rem;
+    border-radius:1rem;
+    background-color:white;
+    font-weight:bold;
+    border:none;
+    width:10rem;
+    margin:1rem auto;
+    
+}
+.noNotes{
+    margin:auto 0;
+}
+.removeAllNotes{
+    color:red;
+}
+.two .right img{
+    margin-bottom:1rem;
+}
+.two .right .noteStatus h4{
+ margin-bottom:0.7rem;
+ font-size:1.5rem;
+ text-align:center;
+}
+/* noteData */
+.noteData{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:40rem;
+    display:none;
+    margin:auto 0;
+}
+.noteData .noteInfo{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:1rem;
+    background-color: white;
+    width:100%;
+    border-radius:1rem;
+}
+.noteInfo input,textarea{
+    width:90%;
+    padding:1rem;
+    margin:1rem;
+    border:none;
+    outline:none;
+    border-bottom:1px solid black;
+    
+}
+/* notes */
+.Notes {
+    padding:2rem;
+    height:100%;
+    border-top:1px solid white;
+    margin-top:1rem;
+}
+.Notes .note{
+    background-color:white;
+    padding:1rem;
+    margin:1rem;
+    border-radius:1rem;
+}
+.Notes .note h4{
+    color:#02549e;
+}
+
+/* single note edit */
+.singleNoteEdit {
+    width:100%;
+    display:none;
+    position: relative;
+}
+.singleNoteEdit header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 2rem;
+    height:8rem;
+    background-color:white;
+}
+.singleNoteEdit header .left{
+    color:#02549e;
+    background-color:transparent;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.singleNoteTitle{
+    font-size:2rem;
+}
+.newTaskButton{
+    color:white;
+    background-color:#02a89e;
+}
+.deleteNoteButton{
+    color:white;
+    background-color:tomato;
+}
+.singleNoteEdit header .right{
+    background-color:white;
+    display:flex;
+    flex-direction:row;
+}
+.singleNoteEdit header .right button{
+    margin:0 1rem;
+}
+.singleNoteEdit main{
+    position:relative;
+    /* height:100%; */
+}
+.noteEditDescription{
+    color:black;
+    background-color:white;
+    padding:1.5rem;
+    border-radius:1rem;
+    border:none;
+}
+.done{
+    border-radius:50%;
+    width:5rem;
+    height:5rem;
+    background-color:blue;
+    color:white;
+    font-size:3rem;
+    margin: 0 2rem;
+    
+}
+.taskMain{
+    background-color: white;
+    margin:2rem;
+    padding:1rem 0;
+    border-radius:1rem;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.done i{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* task details */
+.taskDetails{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:20rem;
+    position:absolute;
+    top:50%;
+    display:none;
+}
+.taskBox{
+    padding:1rem;
+    background-color:white;
+    border-radius:1rem;
+    width:100%;
+}
+.taskDetails .taskInput{
+    width:100%;
+    padding:1rem;
+    border:none;
+    outline:none;
+    border-bottom:1px solid black;
+}
+.setTaskDiv{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.setTaskButton{
+    background-color:#02a89e;
+    color:white;
+    width:10rem;
+    margin:0 auto;
+    margin-top:1rem;
+}
+.singleEdit{
+    /* opacity:0.3; */
+}
+.taskContainer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    color:black;
+    background-color:white;
+   width:fit-content;
+   padding-left:3rem;
+   padding-bottom:2rem;
+}
+.completedTask,.remainderTask{
+    display:flex;
+    align-items: center;
+    margin:0.5rem 0;
+}
+.completedTask i,.remainderTask input{
+    margin-right:1rem
+}
+.individualTaskHeading{
+    color:#02549e;
+    font-size:1.5rem;
+    margin:1rem 2rem;
+}
+.completeTick{
+    color:lightgreen;
+    font-size:2rem;
+}
